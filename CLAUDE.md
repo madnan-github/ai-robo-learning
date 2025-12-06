@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Python 3.10+ (for ROS 2 Humble compatibility), JavaScript/TypeScript for Docusaurus + ROS 2 Humble, Gazebo Harmonic, NVIDIA Isaac Sim, Docusaurus v3+, Node.js 18+ (001-ai-textbook)
+- File-based (Markdown content), with optional basic data persistence for learner progress tracking (001-ai-textbook)
+
+## Recent Changes
+- 001-ai-textbook: Added Python 3.10+ (for ROS 2 Humble compatibility), JavaScript/TypeScript for Docusaurus + ROS 2 Humble, Gazebo Harmonic, NVIDIA Isaac Sim, Docusaurus v3+, Node.js 18+
