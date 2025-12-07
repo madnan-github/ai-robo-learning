@@ -14,7 +14,7 @@ Create an AI-native textbook for Physical AI & Humanoid Robotics enabling self-l
 **Language/Version**: Python 3.10+ (for ROS 2 Humble compatibility), JavaScript/TypeScript for Docusaurus
 **Primary Dependencies**: ROS 2 Humble, Gazebo Harmonic, NVIDIA Isaac Sim, Docusaurus v3+, Node.js 18+
 **Storage**: File-based (Markdown content), with optional basic data persistence for learner progress tracking
-**Testing**: Link checking with `lychee`, build validation with `npm run build`, manual validation in Ubuntu 22.04 environment
+**Testing**: Docker-based validation in Ubuntu 22.04 container, link checking with `lychee`, build validation with `npm run build`
 **Target Platform**: Web-based Docusaurus site deployable to GitHub Pages or Vercel, with simulation environments running on Ubuntu 22.04
 **Project Type**: Static site generation with educational content and interactive lab exercises
 **Performance Goals**: Simulation performance minimum 30 FPS, Docusaurus site loads in <3 seconds, build time <5 minutes
@@ -49,6 +49,7 @@ specs/[###-feature]/
 ├── research.md          # Phase 0 output (/sp.plan command)
 ├── data-model.md        # Phase 1 output (/sp.plan command)
 ├── quickstart.md        # Phase 1 output (/sp.plan command)
+├── contracts/           # Phase 1 output (/sp.plan command)
 └── tasks.md             # Phase 2 output (/sp.tasks command - NOT created by /sp.plan)
 ```
 
@@ -106,6 +107,8 @@ package.json
 docusaurus.config.js
 sidebars.js
 README.md
+Dockerfile
+docker-compose.yml
 .github/
 └── workflows/
     └── ci.yml

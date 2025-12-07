@@ -5,7 +5,7 @@ description: "Task list for AI-native textbook project"
 # Tasks: High-Level Book Architecture – Physical AI & Humanoid Robotics
 
 **Input**: Design documents from `/specs/001-ai-textbook/`
-**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md
+**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
 **Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
 
@@ -63,12 +63,14 @@ description: "Task list for AI-native textbook project"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T006 [P] Set up basic content pipeline architecture following `/sp.specify` → AI draft → human edit → test → deploy workflow
-- [ ] T007 [P] Create basic markdown content structure for modules, chapters, and lessons in docs/
-- [ ] T008 [P] Create initial README.md with project overview and setup instructions
-- [ ] T009 Create basic CI workflow in .github/workflows/ci.yml for build validation
-- [ ] T010 [P] Set up backend API structure in api/ directory with basic server configuration
-- [ ] T011 [P] Create services/ directory structure for business logic components
+- [ ] T006 Create Dockerfile for Ubuntu 22.04 + ROS 2 Humble environment
+- [ ] T007 [P] Create docker-compose.yml for development environment with ROS 2 and Gazebo
+- [ ] T008 [P] Set up basic content pipeline architecture following `/sp.specify` → AI draft → human edit → test → deploy workflow
+- [ ] T009 Create basic markdown content structure for modules, chapters, and lessons in docs/
+- [ ] T010 [P] Create initial README.md with project overview and setup instructions
+- [ ] T011 Create basic CI workflow in .github/workflows/ci.yml for build validation
+- [ ] T012 [P] Set up backend API structure in api/ directory with basic server configuration
+- [ ] T013 [P] Create services/ directory structure for business logic components
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -162,11 +164,14 @@ Examples of foundational tasks (adjust based on your project):
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T042 [P] Create localization files for Urdu in i18n/ur/ following data-model.md LocalizationContent entity
-- [ ] T043 [P] Add code examples validation scripts in scripts/validate-code-examples.sh
-- [ ] T044 [P] Update docusaurus.config.js with SEO optimization features
-- [ ] T045 [P] Create link validation workflow using lychee in .github/workflows/link-check.yml
-- [ ] T046 Run quickstart.md validation to ensure all setup instructions work correctly
+- [ ] T042 [P] Add progress tracking frontend components in src/components/progress-tracker/ with API integration
+- [ ] T043 [P] Create progress tracking service in services/progress-service.js with business logic from data-model.md
+- [ ] T044 [P] Implement progress API endpoints in api/progress/index.js based on contracts/progress-api.yaml with proper backend service architecture
+- [ ] T045 [P] Create localization files for Urdu in i18n/ur/ following data-model.md LocalizationContent entity
+- [ ] T046 [P] Add code examples validation scripts in scripts/validate-code-examples.sh
+- [ ] T047 [P] Update docusaurus.config.js with SEO optimization features
+- [ ] T048 [P] Create link validation workflow using lychee in .github/workflows/link-check.yml
+- [ ] T049 Run quickstart.md validation to ensure all setup instructions work correctly
 
 ---
 
